@@ -49,6 +49,10 @@ class WebsiteSale(website_sale):
     @http.route(['/shop/confirm_order'], type='http', auth="public",
                 website=True)
     def confirm_order(self, **post):
+        if (request.session.get('free_tickets') is None and
+                request.session.get('has_paid_tickets') is None):
+            # Handle call of this method from regular shop
+            return super(WebsiteSale, self).confirm_order(**post)
         if request.session.get('free_tickets'):
             values = self.checkout_values(post)
             values['error'] = self.checkout_form_validate(post)
@@ -73,7 +77,9 @@ class WebsiteSale(website_sale):
         if request.session.get('has_paid_tickets'):
             return super(WebsiteSale, self).confirm_order(**post)
         elif request.session.get('free_tickets'):
-            request.website.sale_get_order().unlink()
+            order = request.website.sale_get_order()
+            if order:
+                order.unlink()
             return http.request.render(
                 'website_event_register_free.partner_register_confirm',
                 {'registration': registration})
