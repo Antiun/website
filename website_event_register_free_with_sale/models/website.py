@@ -18,5 +18,16 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from . import controllers
-from . import models
+from openerp import models, api
+
+
+class Website(models.Model):
+    _inherit = 'website'
+
+    @api.multi
+    def sale_get_order(self, force_create=False, code=None,
+                       update_pricelist=None):
+        res = super(Website, self).sale_get_order(
+            force_create=force_create, code=code,
+            update_pricelist=update_pricelist)
+        return res if res is not None else self.env['sale.order']
