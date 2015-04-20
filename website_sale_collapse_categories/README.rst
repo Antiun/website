@@ -31,8 +31,8 @@ when loading category page.
 Known issues / Roadmap
 ======================
 
-This module won't be needed on v9, because there are plans to include this
-functionality on core, as seen on PR: https://github.com/odoo/odoo/pull/4830.
+This module won't be needed on v9, because it is already part of the core
+functionality, because of this PR: https://github.com/odoo/odoo/pull/4830.
 
 Credits
 =======

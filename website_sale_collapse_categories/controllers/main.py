@@ -15,16 +15,14 @@ class WebsiteSale(website_sale):
          'page/<int:page>'],
         type='http', auth="public", website=True)
     def shop(self, page=0, category=None, search='', **post):
-        def recursive_category(category, parent_category=None):
-            if parent_category is None:
-                parent_category = []
-            parent_category.append(category.id)
-            if category.parent_id:
-                recursive_category(category.parent_id, parent_category)
-            return parent_category
-
+        parent_category_ids = []
+        if category:
+            parent_category_ids = [category.id]
+            current_category = category
+            while current_category.parent_id:
+                parent_category_ids.append(current_category.parent_id.id)
+                current_category = current_category.parent_id
         response = super(WebsiteSale, self).shop(
             page=page, category=category, search=search, **post)
-        response.qcontext['parent_category'] = (
-            recursive_category(category) if category else [])
+        response.qcontext['parent_category_ids'] = parent_category_ids
         return response
