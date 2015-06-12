@@ -21,4 +21,14 @@
 #
 ##############################################################################
 
-from . import models
+from openerp import models, fields
+
+
+class ResCompany(models.Model):
+    _inherit = 'res.company'
+
+    cookie_text = fields.Html(
+        string="Cookie text", translate=True,
+        default="This website uses cookies to improve user experience. "
+                "By using our website you consent to all cookies in "
+                "accordance with our Cookie Policy.")
