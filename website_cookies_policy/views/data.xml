@@ -1,0 +1,7 @@
+<openerp>
+    <data>
+        <record id="base.model_res_company" model="res.company">
+            <field name="cookie_text">This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.</field>
+        </record>
+    </data>
+</openerp>
