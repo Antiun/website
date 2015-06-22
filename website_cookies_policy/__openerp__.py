@@ -31,6 +31,7 @@
     ],
     'data': [
         'views/website_view.xml',
+        # 'views/data.xml',
     ],
     'author': 'Antiun Ingenieria S.L.',
     'maintainer': 'Antiun Ingenieria S.L.',
