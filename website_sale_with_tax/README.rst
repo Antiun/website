@@ -1,16 +1,18 @@
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
     :alt: AGPLv3 License
 
-Website sale with tax
-=====================
+Product prices with taxes on e-commerce
+=======================================
 
-Include tax in price on website shop.
+This addon shows the correct price indepently of the tax configuration
+(with or without the "Tax included in price" check).
 
-This addons takes care of tax configuration: price_include, showing prices
-with tax included even price_include == True or price_include == False
+It takes care of tax configuration: price_include, showing prices
+with tax included even "Tax included in price" is check (price_include == True)
+or unckecked (price_include == False)
 
-This helps to shop owner because he can set product prices with taxes
-or without taxes, but prices are always shown in website shop with taxes
+This helps to shop owner because he can set product prices with or without taxes,
+but prices are always shown in website shop with taxes
 
 
 Credits

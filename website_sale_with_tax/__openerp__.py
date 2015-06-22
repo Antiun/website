@@ -24,7 +24,7 @@
 ##############################################################################
 {
     # Addon information
-    'name': "Website sale with tax",
+    'name': "Product prices with taxes on e-commerce",
     'category': 'Website',
     'version': '1.0',
     'depends': [
@@ -32,9 +32,9 @@
         'account',
     ],
     'data': [
-        'views/product_item_view.xml',
-        'views/product_price_view.xml',
-        'views/product_cart_products_view.xml',
+        'views/template_product_item.xml',
+        'views/template_product_price.xml',
+        'views/template_product_cart_products.xml',
     ],
     'qweb': [
     ],
