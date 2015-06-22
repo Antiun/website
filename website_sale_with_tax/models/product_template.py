@@ -23,7 +23,6 @@
 #
 ##############################################################################
 
-
 from openerp import models, fields, api
 
 
@@ -35,7 +34,6 @@ class ProductTemplate(models.Model):
 
     @api.one
     def _get_product_total_price_with_tax(self):
-        price = self.price if self.price else self.lst_price
-        taxes = self.taxes_id.compute_all(
-            price, 1, product=self)
+        price = self.price or self.lst_price
+        taxes = self.taxes_id.compute_all(price, 1, product=self)
         self.price_with_tax = taxes['total_included']
