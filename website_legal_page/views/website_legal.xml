@@ -51,7 +51,7 @@
             <div>
               <t t-if="res_company.vat">
                 <p>
-                  TAX ID: <span t-field="res_company.vat"/>
+                  VAT number: <span t-field="res_company.vat"/>
                 </p>
               </t>
             </div>
