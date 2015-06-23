@@ -27,7 +27,7 @@
  */
 
 // Check jQuery available
-if (typeof jQuery === 'undefined') { throw new Error('POS with tax Addon requires jQuery') }
+if (typeof jQuery === 'undefined') { throw new Error('Website CRM privacy policy addon requires jQuery') }
 
 +function ($) {
     'use strict';
@@ -41,7 +41,6 @@ if (typeof jQuery === 'undefined') { throw new Error('POS with tax Addon require
             if(!$('input[name="privacy_policy"]').is(':checked')) {
                 e.preventDefault();  // Prevent form from submitting
                 alert(_t('You must accept our Privacy Policy.'));
-                // alert(_t('Es obligatorio aceptar la Política de Privacidad.');
             }
         });
 

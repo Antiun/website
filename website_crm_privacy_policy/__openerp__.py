@@ -27,7 +27,6 @@
     'name': 'Website CRM privacy policy',
     'category': 'Website',
     'version': '1.0',
-    'author': 'Trey',
     'depends': [
         'website',
         'website_crm',
@@ -38,7 +37,8 @@
         'views/templates.xml',
     ],
     'author': 'Trey, '
-              'Antiun Ingeniería S.L.',
+              'Antiun Ingeniería S.L., '
+              'Odoo Community Association (OCA)',
     'website': 'http://www.trey.es',
     'license': 'AGPL-3',
     'demo': [],
