@@ -183,7 +183,7 @@ msgstr ""
 
 #. module: website_legal_page
 #: view:website:website.legal
-msgid "TAX ID:"
+msgid "VAT number:"
 msgstr ""
 
 #. module: website_legal_page

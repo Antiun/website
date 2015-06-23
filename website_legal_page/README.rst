@@ -4,7 +4,7 @@
 Website legal page
 ==================
 
-This module was written to provides common legal pages needed in any website:
+This module was written to provide common legal pages needed in any website:
 
 * **Legal advice**: Website propietary and disclaimers
 * **Terms of use**: Which services website offers and legal restrictions
@@ -16,11 +16,14 @@ through the website
 Usage
 =====
 
-Website editors can change easily any text of these pages using website builder
+Website editor can change easily any text of these pages using website builder
 
+
+Known issues / Roadmap
+======================
 
 Disclaimer
-==========
+----------
 
 These legal pages are templates.
 
@@ -44,6 +47,9 @@ relationship by providing information to you.
 
 Credits
 =======
+
+Templates
+---------
 
 Templates are based on legal templates publicy provided by [termsfeed.com](https://termsfeed.com):
 
