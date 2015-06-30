@@ -14,7 +14,7 @@
                     <label>
                         <input type="checkbox" name="privacy_policy" required="True"/>
                         I have read and accept the
-                        <a href="/page/privacy" title="Privacy Policy">Privacy Policy</a>.
+                        <a href="/page/privacy" target="_blank" title="Privacy Policy">Privacy Policy</a>.
                     </label>
                 </div>
             </div>
