@@ -1,5 +1,5 @@
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-    :alt: AGPLv3 License
+    :alt: License: AGPL-3
 
 Website legal page
 ==================
@@ -77,15 +77,16 @@ Thanks to [johnny_automatic](https://openclipart.org/user-detail/johnny_automati
 Contributors
 ------------
 
+* Rafael Blasco <rafabn@antiun.com>
 * Antonio Espinosa <antonioea@antiun.com>
 * Igor Pastor <igorpg@antiun.com>
 
 Maintainer
 ----------
 
-.. image:: http://odoo-community.org/logo.png
+.. image:: https://odoo-community.org/logo.png
    :alt: Odoo Community Association
-   :target: http://odoo-community.org
+   :target: https://odoo-community.org
 
 This module is maintained by the OCA.
 
