@@ -12,10 +12,7 @@
         <attribute name="t-attf-class">hidden</attribute>
     </xpath>
     <xpath expr="//div[@class='product_price']//span[@t-field='product.price']" position="after">
-        <span t-field="product.price_with_tax" style="white-space: nowrap;"  t-field-options='{
-           "widget": "monetary",
-           "display_currency": "user_id.partner_id.property_product_pricelist.currency_id"
-        }'>
+        <span t-field="product.price_with_tax" style="white-space: nowrap;"  t-field-options=''>
         </span>
     </xpath>
 </template>
