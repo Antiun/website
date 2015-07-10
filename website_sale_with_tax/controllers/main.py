@@ -23,18 +23,28 @@
 #
 ##############################################################################
 
-from openerp import models, fields, api
+from openerp import http
+from openerp.http import request
+from openerp.addons.website_sale.controllers.main import website_sale
 
 
-class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+class WebsiteSale(website_sale):
 
-    price_with_tax = fields.Float(
-        string="Price with tax", compute="_get_product_total_price_with_tax")
-
-    @api.one
-    @api.depends('lst_price', 'taxes_id')
-    def _get_product_total_price_with_tax(self):
-        price = self.price or self.lst_price
-        taxes = self.sudo().taxes_id.compute_all(price, 1, product=self)
-        self.price_with_tax = taxes['total_included']
+    @http.route(['/shop/get_unit_price'], type='json', auth="public",
+                methods=['POST'], website=True)
+    def get_unit_price(self, product_ids, add_qty,
+                       use_order_pricelist=False, **kw):
+        result = super(WebsiteSale, self).get_unit_price(
+            product_ids, add_qty,
+            use_order_pricelist=use_order_pricelist, **kw)
+        if result and type(result) is dict:
+            prices = {}
+            m_product = request.env['product.product'].sudo()
+            for product_id, price in result.iteritems():
+                product = m_product.browse(product_id)
+                if product:
+                    taxes = product.sudo().taxes_id.compute_all(
+                        price, 1, product=product)
+                    prices[product_id] = taxes['total_included']
+            result = prices
+        return result

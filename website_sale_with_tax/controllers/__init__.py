@@ -23,18 +23,4 @@
 #
 ##############################################################################
 
-from openerp import models, fields, api
-
-
-class ProductTemplate(models.Model):
-    _inherit = 'product.template'
-
-    price_with_tax = fields.Float(
-        string="Price with tax", compute="_get_product_total_price_with_tax")
-
-    @api.one
-    @api.depends('lst_price', 'taxes_id')
-    def _get_product_total_price_with_tax(self):
-        price = self.price or self.lst_price
-        taxes = self.sudo().taxes_id.compute_all(price, 1, product=self)
-        self.price_with_tax = taxes['total_included']
+from . import main
