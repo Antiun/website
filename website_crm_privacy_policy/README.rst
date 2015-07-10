@@ -1,5 +1,5 @@
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-    :alt: AGPLv3 License
+    :alt: License: AGPL-3
 
 Website CRM privacy policy
 ==========================
@@ -45,13 +45,15 @@ Contributors
 
 * Jorge Camacho <jcamacho@trey.es>
 * Antonio Espinosa <antonioea@antiun.com>
+* Rafael Blasco <rafabn@antiun.com>
+
 
 Maintainer
 ----------
 
-.. image:: http://odoo-community.org/logo.png
+.. image:: https://odoo-community.org/logo.png
    :alt: Odoo Community Association
-   :target: http://odoo-community.org
+   :target: https://odoo-community.org
 
 This module is maintained by the OCA.
 

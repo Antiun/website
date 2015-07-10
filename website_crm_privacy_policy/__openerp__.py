@@ -2,17 +2,16 @@
 # Python source code encoding : https://www.python.org/dev/peps/pep-0263/
 ##############################################################################
 #
-#    OpenERP, Open Source Management Solution
-#    This module copyright :
-#        (c) 2014-Today Trey, Kilobytes de Soluciones <www.trey.es>
-#                 Jorge Camacho <jcamacho@trey.es>
-#        (c) 2015 Antiun Ingenieria, SL (Madrid, Spain, http://www.antiun.com)
-#                 Antonio Espinosa <antonioea@antiun.com>
+#    OpenERP, Odoo Source Management Solution
+#    Copyright (c) 2014-Today Trey, Kilobytes de Soluciones <www.trey.es>
+#                       Jorge Camacho <jcamacho@trey.es>
+#    Copyright (c) 2015 Antiun Ingeniería S.L. (http://www.antiun.com)
+#                       Antonio Espinosa <antonioea@antiun.com>
 #
 #    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
+#    it under the terms of the GNU Affero General Public License as published
+#    by the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
 #
 #    This program is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
