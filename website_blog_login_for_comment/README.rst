@@ -9,4 +9,6 @@ Credits
 
 Contributors
 ------------
+* Rafael Blasco <rafabn@antiun.com>
+* Antonio Espinosa <antonioea@antiun.com>
 * Javier Iniesta <javieria@antiun.com>
