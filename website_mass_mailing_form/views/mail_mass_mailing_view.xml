@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<record id="view_mail_mass_mailing_list_form" model="ir.ui.view">
+    <field name="name">Mailing List - Website Form</field>
+    <field name="model">mail.mass_mailing.list</field>
+    <field name="inherit_id" ref="mass_mailing.view_mail_mass_mailing_list_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//div[@class='oe_title']" position="after">
+            <group>
+                <group string="Website Form">
+                    <field name="form_slug"/>
+                    <field name="published"/>
+                    <field name="form_description"/>
+                    <field name="signup_message"/>
+                    <field name="unsubscribe_message"/>
+                    <field name="signup_template"/>
+                    <field name="unsubscribe_template"/>
+                </group>
+            </group>
+        </xpath>
+    </field>
+</record>
+
+</data>
+</openerp>

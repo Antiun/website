@@ -7,10 +7,10 @@
     'version': '8.0.1.0.0',
     'depends': [
         'website',
-        'mass_mailing',
-        'website_recaptcha'
+        'mass_mailing'
     ],
     'data': [
+        'views/mail_mass_mailing.xml'
     ],
     'qweb': [
     ],
