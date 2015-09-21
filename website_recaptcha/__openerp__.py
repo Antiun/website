@@ -10,8 +10,7 @@
     ],
     'external_dependencies': {},
     'data': [
-        'views/res_config.xml',
-        'views/website.xml'
+        'views/res_config.xml'
     ],
     'author': 'Antiun Ingeniería S.L., '
               'Odoo Community Association (OCA)',
