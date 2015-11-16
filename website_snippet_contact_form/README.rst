@@ -42,6 +42,7 @@ Contributors
 
 * Rafael Blasco <rafaelbn@antiun.com>
 * Jairo Llopis <yajo.sk8@gmail.com>
+* Antonio Espinosa <antonioea@antiun.com>
 
 Maintainer
 ----------
