@@ -12,16 +12,16 @@
         <group string="Bank Accounts" position="before">
             <group string="Geo Localization">
                 <group>
-                    <field name="partner_latitude"/>
-                    <field name="partner_longitude"/>
-                    <field name="date_localization"/>
-                </group>
-                <group>
                     <button string="Geo Localize"
                             name="geo_localize"
                             colspan="2"
                             icon="gtk-apply"
                             type="object"/>
+                    <field name="partner_latitude"/>
+                    <field name="partner_longitude"/>
+                    <field name="date_localization"/>
+                </group>
+                <group>
                     <field name="map_marker"/>
                     <field name="map_zoom"/>
                 </group>

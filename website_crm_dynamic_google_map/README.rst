@@ -6,9 +6,9 @@
 Website dynamic Google Map
 ==========================
 
-This module extends the functionality of Google Maps static map on
+This module extends the functionality of Google Maps(tm) static map on
 "Contact Us" view (company address) to support markers and allows you
-to choice between Google Maps static or dynamic map and
+to choice between Google Maps(tm) static or dynamic map and
 to set the precise coordinates of a partner address.
 
 
@@ -58,7 +58,8 @@ Contributors
 Icon
 ----
 
-`Copyright Google <https://www.seeklogo.net/wp-content/uploads/2015/09/new-google-maps-logo.png>`_
+Copyright by Google Inc.
+'Google Map' is a trademark registered by Google Inc.
 
 
 Maintainer

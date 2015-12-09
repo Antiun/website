@@ -16,15 +16,15 @@ class ResPartner(models.Model):
         string="GoogleMap type", default='static')
 
     @api.multi
-    def google_map_img(self, zoom=8, width=298, height=298):
+    def google_map_img(self, zoom=8, width=298, height=298, context=None):
         super(ResPartner, self).google_map_img(
-            zoom=zoom, width=width, height=height)
+            zoom=zoom, width=width, height=height, context=context)
         self.ensure_one()
         lat = self.partner_latitude
         lon = self.partner_longitude
         if (not float_is_zero(lat, precision_digits=8) and
                 not float_is_zero(lon, precision_digits=8)):
-            position = '%3.8f, %3.8f' % (lat, lon)
+            position = '%3.8f,%3.8f' % (lat, lon)
         else:
             position = '%s, %s %s, %s' % (
                 self.street or '',
@@ -40,15 +40,16 @@ class ResPartner(models.Model):
                 'zoom': zoom,
                 'sensor': 'false',
             }
-            if self.google_map_marker:
+            if self.map_marker:
                 params['markers'] = params['center']
             url_base = '//maps.googleapis.com/maps/api/staticmap'
         else:
             params = {
-                'q': '%s %s' % (self.name, position),
-                'ie': 'UTF8',
-                'output': 'embed',
-                'z': zoom,
+                'q': '%s' % position,
+                # 'ie': 'UTF8',
+                # 'output': 'embed',
+                'zoom': zoom,
             }
-            url_base = '//maps.google.com/maps'
+            # TODO, get Google API key for using maps embed api
+            url_base = 'https://www.google.com/maps/embed/v1/search?key=xxx'
         return urlplus(url_base, params)
