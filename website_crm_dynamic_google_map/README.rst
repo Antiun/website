@@ -12,22 +12,22 @@ to choice between Google Maps static or dynamic map and
 to set the precise coordinates of a partner address.
 
 
-Configuration
-=============
-
-To configure this module, you need to:
-
-* Go To Settings > Companies > "Your Company"
-* Edit
-* Fill the fields in "General information" tab, "Geo Localization" section
-
-
 Usage
 =====
+
+To define your company map options, go to:
+
+* Settings > Companies > "Your Company"
+* Edit
+* Fill the fields in "General information" tab, "Geo Localization" section
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
    :alt: Try me on Runbot
    :target: https://runbot.odoo-community.org/runbot/186/8.0
+
+For further information, please visit:
+
+* https://www.odoo.com/forum/help-1
 
 
 Known issues / Roadmap
@@ -54,6 +54,12 @@ Contributors
 * Rafael Blasco <rafabn@antiun.com>
 * Antonio Espinosa <antonioea@antiun.com>
 * Daniel Gómez-Zurita <dgzurita@antiun.com>
+
+Icon
+----
+
+`Copyright Google <https://www.seeklogo.net/wp-content/uploads/2015/09/new-google-maps-logo.png>`_
+
 
 Maintainer
 ----------

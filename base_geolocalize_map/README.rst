@@ -51,6 +51,11 @@ Contributors
 * Rafael Blasco <rafabn@antiun.com>
 * Antonio Espinosa <antonioea@antiun.com>
 
+Icon
+----
+
+`Created by Jose Moya from Noun Project <https://thenounproject.com/search/?q=map&i=47766>`_
+
 Maintainer
 ----------
 
