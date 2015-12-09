@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2015 Antiun Ingenieria S.L. - Antonio Espinosa
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<openerp>
+<data>
+
+<record id="view_partner_form" model="ir.ui.view">
+    <field name="name">Add Google Maps options</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base_geolocalize.view_crm_partner_geo_form"/>
+    <field name="arch" type="xml">
+        <field name="map_zoom" position="after">
+            <field name="google_map_type"/>
+        </field>
+    </field>
+</record>
+
+</data>
+</openerp>
